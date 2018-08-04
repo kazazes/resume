@@ -1,0 +1,72 @@
+\input{content/config.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     3rd party packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Needed to divide into several files
+\usepackage{import}
+
+\input{content/header.tex}
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Hiring Manager}
+  {MapKit}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Platform Engineer}
+% How the letter is opened
+\letteropening{To Whom It May Concern:}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Peter Kazazes~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+I am interested in applying for MapKit's job posting for a product engineer in New York City. I was excited to find your post, as my experience and interests are a perfect match with the post's requirements and I am excited at the prospect of transitioning roles.
+
+In 2012, after five years of contract consulting, I started Sibyl Vision, a boutique consulting firm focused on public opinion analysis for high-profile companies, individuals and politicians. My team and I built domain-specific solutions for HBO, Mondelez, Fox Business and many others.
+
+At Sibyl Vision, I built and maintained our data-processing pipelines, which are capable of constantly analyzing a significant percentage of global social media conversation. Using NLP and demographic analysis, we built ridiculously accurate models to predict consumer behavior in real time, with applications in political policy development, ad-spend KPIs, and financial instrument forecasting. I also built and maintained our API, iOS and web front ends. My go-to stack for data-heavy work with a web layer is Java, ELK, MySQL, Node.js, and Redis.
+
+I am also professionally-versed in network security and DevOps, which are also mentioned in your listing. I'm a digital policy junky, and am an editor at a widely distributed cyber law policy journal.
+
+There is nothing as exciting as a new domain of technical challenge, and I am entirely confident I can be an asset to MapKit's engineering team. I can be reached anytime at (203) 940-1857 or peter@peterk.co.
+
+Thank you for your time and consideration. I look forward to talking with MapKit further!
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}

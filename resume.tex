@@ -1,0 +1,34 @@
+\input{content/config.tex}
+\input{content/header.tex}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Peter C. Kazazes~~~·~~~Résumé}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+\input{content/summary.tex}
+\input{content/experience.tex}
+% \input{content/honors.tex}
+% \input{content/presentation.tex}
+% \input{content/projects.tex}
+% \input{content/committees.tex}
+%\input{content/education.tex}
+% \input{content/extracurricular.tex}
+
+
+%-------------------------------------------------------------------------------
+\end{document}
